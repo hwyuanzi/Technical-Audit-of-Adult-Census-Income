@@ -50,7 +50,5 @@ This project explicitly complies with the assignment deliverables:
 
 ## Authors
 
-- **[Partner 1 Name]** - NYU Spring 2026
-- **[Partner 2 Name]** - NYU Spring 2026
-
-*Note: Please update the [Partner 1/2 Name] sections before submission.*
+- **[Hollan Yuan]**
+- **[Sylvia Zhang]**
