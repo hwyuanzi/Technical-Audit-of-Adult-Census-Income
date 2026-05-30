@@ -86,6 +86,16 @@ Based on the report, notebook, and presentation slides, this project recommends:
 `-- Presentation Slides.pdf
 ```
 
+## Current Repository Health Check (2026-05-30)
+
+A quick consistency check was run across all tracked project artifacts in this repository snapshot:
+
+- All expected deliverables are present: `README.md`, `LICENSE`, `.gitignore`, `adult.csv`, `adult-census-income.ipynb`, `Report.pdf`, and `Presentation Slides.pdf`.
+- `adult.csv` is readable and structurally valid with 32,562 rows including header (32,561 data rows) and 15 columns.
+- `adult-census-income.ipynb` is valid notebook JSON with 115 cells and a Python 3 kernel specification.
+- Notebook code content is syntactically consistent for notebook execution; one cell uses `%matplotlib inline`, which is valid IPython/Jupyter magic syntax.
+- `.gitignore` correctly excludes local environment files, notebook checkpoints, and OS/IDE artifacts.
+
 ## File Guide
 
 | File | What it is | How to use or open it |
@@ -115,7 +125,7 @@ Create and activate a Python environment:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python3 -m pip install numpy pandas matplotlib seaborn scikit-learn jupyter ipython
+python3 -m pip install numpy pandas scipy matplotlib seaborn scikit-learn jupyter ipython
 ```
 
 Then start Jupyter:
@@ -131,6 +141,7 @@ Local notes:
 - In Part I, if a cell reads from `/content/drive/MyDrive/adult.csv`, change that path to `adult.csv`.
 - Part II has a more robust dataset loader and should automatically find `adult.csv` in the repository folder.
 - Optional SHAP code is present but disabled in the notebook; the main transparency audit uses Logistic Regression coefficients and linear contribution tables.
+- If you want to run optional SHAP cells, install it separately with `python3 -m pip install shap`.
 
 ## Data and Source References
 
